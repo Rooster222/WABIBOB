@@ -1,1 +1,9 @@
+if not game:IsLoaded() then
+    local notLoaded = Instance.new("Message")
+    notLoaded.Parent = COREGUI
+    notLoaded.Text = "waiting for the game to load"
+    game.Loaded:Wait()
+    notLoaded:Destroy()
+end
+
 print('balbalblablablablalba random test autoexec')
